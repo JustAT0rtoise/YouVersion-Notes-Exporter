@@ -4,8 +4,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from dotenv import load_dotenv
 
+# Documentation: https://pypi.org/project/youversion/
 from youversion.clients import SyncClient
-
 
 OUTPUT_FILE = "andbible-bookmarks.csv"
 DEFAULT_DOCUMENT_NAME = "MyBible-ESV" #  The bible version you want each note to "be under."
