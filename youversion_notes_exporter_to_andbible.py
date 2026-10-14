@@ -4,7 +4,8 @@ from datetime import datetime, timezone
 from pathlib import Path
 from dotenv import load_dotenv
 
-# Documentation: https://pypi.org/project/youversion/
+# Documentation: https://pypi.org/project/youversion-bible-client/
+# Package: youversion-bible-client
 from youversion.clients import SyncClient
 
 OUTPUT_FILE = "andbible-bookmarks.csv"
@@ -168,7 +169,8 @@ with open(OUTPUT_FILE, "w", newline="", encoding="utf-8") as f:
             
             # TODO: This part forward needs some nice, beautiful, abstraction. Very much MVP (minimal viable product) in terms of code cleanliness.
             
-            # The first reference will be our "base," or the reference of which verse data will be written in the CSV. All other references are assumed to be cross-refs or linked verses, and will be referenced in the markdown_note.
+            # The first reference will be our "base," or the reference of which verse data will be written in the CSV.
+            # All other references are assumed to be cross-refs or linked verses, and will be referenced in the markdown_note.
             
             base_ref = references[0]
             
